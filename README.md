@@ -37,8 +37,6 @@ A plain HTML/CSS/JS portfolio site. No build step, no installs — just open
 
 ## Filling in the placeholders
 
-- **LinkedIn:** open `index.html`, search for `TODO: paste your LinkedIn URL`,
-  and replace the placeholder link/text with your real profile URL.
 - **Resume:** replace `resume.pdf` in this folder with your latest resume,
   keeping the same filename — the "Download Resume" buttons will pick it up
   automatically.
