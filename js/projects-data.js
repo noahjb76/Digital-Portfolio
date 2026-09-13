@@ -132,13 +132,13 @@ const IN_PROGRESS_PROJECTS = [
     title: "Engineering Assistant",
     category: "Independent Project",
     description: "Architecting a unified engineering workspace integrating dual online/offline AI nodes, fabrication tooling, and a secure data-transfer system for isolated engineering workflows.",
-    started: "December 2025"
+    started: "May 2026"
   },
   {
     title: "FPV Drone Build",
     category: "Independent Project",
     description: "Designing and building a custom FPV quadcopter from scratch, including 3D-printed frame fabrication and full electrical/wiring integration.",
-    started: "December 2025"
+    started: "July 2026"
   },
   {
     title: "Tripoli L1 Rocket Certification",

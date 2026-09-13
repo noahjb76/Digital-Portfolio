@@ -50,18 +50,18 @@ delete it from `IN_PROGRESS_PROJECTS`.
 ## Filling in the placeholders
 
 - **Resume:** replace `resume.pdf` in this folder with your latest resume,
-  keeping the same filename — the "Download Resume" buttons will pick it up
+  keeping the same filename — the "Download Resume" button will pick it up
   automatically.
+- **Full portfolio PDF:** replace `portfolio.pdf` the same way to update the
+  "Full Portfolio" download.
 
-## Publishing the site (optional, whenever you're ready)
+## Publishing updates
 
-This folder is already a git repository with one commit. To host it for free
-on GitHub Pages later:
-
-1. Create a new empty repository on GitHub.
-2. `git remote add origin <your-repo-url>`
-3. `git push -u origin main`
-4. In the GitHub repo's Settings → Pages, set the source to the `main` branch.
+This site is live on GitHub Pages at
+https://noahjb76.github.io/Digital-Portfolio/, served straight from the
+`main` branch of this repo. Whenever you (or Claude) commit and
+`git push`, the live site rebuilds automatically within about a minute —
+no extra steps needed.
 
 ## File structure
 
@@ -72,4 +72,5 @@ js/projects-data.js      All project content — edit this to add projects (PROJ
 js/app.js                Renders the project grid + detail view, handles routing
 images/<project-id>/     Images for each project
 resume.pdf                Your resume, linked from the Contact section
+portfolio.pdf              The original portfolio PDF, linked from the Contact section
 ```
