@@ -99,3 +99,51 @@ const PROJECTS = [
     ]
   }
 ];
+
+// ============================================================================
+// IN-PROGRESS / CURRENT WORK
+// ============================================================================
+// Lighter-weight entries for work that's underway but not written up as a
+// full case study yet. Shown in the "Current / In Progress" section, not
+// clickable, no images required. Once a project here is finished and
+// documented, move it up into PROJECTS above (using the full template)
+// and delete it from here.
+//
+// Field guide:
+//   title       - project name
+//   category    - short tag shown above the title
+//   description - 1-2 sentences on what you're doing
+//   started     - e.g. "December 2025" (optional, shown as a small meta line)
+// ============================================================================
+
+/* TEMPLATE — copy this, uncomment, fill in, and add to the array below:
+
+{
+  title: "Project Name",
+  category: "Category Name",
+  description: "What you're doing.",
+  started: "Month Year"
+},
+
+*/
+
+const IN_PROGRESS_PROJECTS = [
+  {
+    title: "Engineering Assistant",
+    category: "Independent Project",
+    description: "Architecting a unified engineering workspace integrating dual online/offline AI nodes, fabrication tooling, and a secure data-transfer system for isolated engineering workflows.",
+    started: "December 2025"
+  },
+  {
+    title: "FPV Drone Build",
+    category: "Independent Project",
+    description: "Designing and building a custom FPV quadcopter from scratch, including 3D-printed frame fabrication and full electrical/wiring integration.",
+    started: "December 2025"
+  },
+  {
+    title: "Tripoli L1 Rocket Certification",
+    category: "Independent Project",
+    description: "Building a high-power rocket airframe (fin alignment, motor mount/ring installation, epoxy work) ahead of a Level 1 certification flight.",
+    started: "December 2025"
+  }
+];

@@ -35,6 +35,18 @@ A plain HTML/CSS/JS portfolio site. No build step, no installs — just open
    the home page automatically, and its detail page is live at
    `index.html#your-id`. No other files need to change.
 
+## How to add/update "Current / In Progress" work
+
+For work that's underway but not ready for a full write-up, use the lighter
+`IN_PROGRESS_PROJECTS` array further down in `js/projects-data.js` instead:
+copy its `TEMPLATE` object, fill in `title`, `category`, `description`, and
+`started`, and add it to the array. These show up as simple (non-clickable)
+cards in the "Current / In Progress" section — no images or id required.
+
+Once one of these is finished and you've written up the full case study,
+move it into the `PROJECTS` array above (using the regular template) and
+delete it from `IN_PROGRESS_PROJECTS`.
+
 ## Filling in the placeholders
 
 - **Resume:** replace `resume.pdf` in this folder with your latest resume,
@@ -56,7 +68,7 @@ on GitHub Pages later:
 ```
 index.html              Page shell (hero, about, contact, project-detail template)
 css/styles.css           All styling
-js/projects-data.js      All project content — edit this to add projects
+js/projects-data.js      All project content — edit this to add projects (PROJECTS and IN_PROGRESS_PROJECTS)
 js/app.js                Renders the project grid + detail view, handles routing
 images/<project-id>/     Images for each project
 resume.pdf                Your resume, linked from the Contact section

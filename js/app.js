@@ -41,6 +41,22 @@ function renderProjectGrid() {
   }).join("");
 }
 
+function renderInProgressGrid() {
+  const grid = document.getElementById("progress-grid");
+  if (!grid) return;
+  grid.innerHTML = IN_PROGRESS_PROJECTS.map((item) => `
+    <div class="progress-card">
+      <div class="card-top-row">
+        <span class="card-category">${escapeHtml(item.category)}</span>
+        <span class="status-badge in-progress">In Progress</span>
+      </div>
+      <h3>${escapeHtml(item.title)}</h3>
+      <p class="card-summary">${escapeHtml(item.description)}</p>
+      ${item.started ? `<p class="progress-started">Since ${escapeHtml(item.started)}</p>` : ""}
+    </div>
+  `).join("");
+}
+
 function renderDetailView(project) {
   document.getElementById("detail-category").textContent = project.category;
   document.getElementById("detail-title").textContent = project.title;
@@ -98,5 +114,6 @@ function route() {
 document.getElementById("year").textContent = new Date().getFullYear();
 
 renderProjectGrid();
+renderInProgressGrid();
 route();
 window.addEventListener("hashchange", route);
