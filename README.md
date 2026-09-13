@@ -73,4 +73,5 @@ js/app.js                Renders the project grid + detail view, handles routing
 images/<project-id>/     Images for each project
 resume.pdf                Your resume, linked from the Contact section
 portfolio.pdf              The original portfolio PDF, linked from the Contact section
+portfolio-qr-code.png      QR code pointing at the live site, for printing/sharing
 ```
